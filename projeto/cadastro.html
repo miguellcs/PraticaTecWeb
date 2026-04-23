@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prática Frontend | Cadastro</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Navegação principal">
+        <a class="brand" href="/index.html">Prática Frontend</a>
+        <ul>
+          <li><a href="/index.html">Início</a></li>
+          <li><a class="active" href="/cadastro.html">Cadastro</a></li>
+          <li><a href="/listagem.html">Listagem</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h1>Cadastro de aluno</h1>
+        <p>Preencha os dados abaixo para adicionar um novo registro.</p>
+
+        <form id="cadastro-form" novalidate>
+          <div class="grid form-grid">
+            <label>
+              Nome completo
+              <input type="text" name="nome" placeholder="Ex.: Ana Souza" required />
+              <small class="error" data-error="nome"></small>
+            </label>
+
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="ana@email.com" required />
+              <small class="error" data-error="email"></small>
+            </label>
+
+            <label>
+              Curso
+              <input type="text" name="curso" placeholder="Ex.: Sistemas para Internet" required />
+              <small class="error" data-error="curso"></small>
+            </label>
+
+            <label>
+              Idade
+              <input type="number" name="idade" min="14" max="120" placeholder="18" required />
+              <small class="error" data-error="idade"></small>
+            </label>
+          </div>
+
+          <div class="actions">
+            <button class="btn primary" type="submit">Salvar cadastro</button>
+            <a class="btn" href="/listagem.html">Ir para listagem</a>
+          </div>
+          <p id="form-message" class="feedback" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/cadastro.js"></script>
+  </body>
+</html>

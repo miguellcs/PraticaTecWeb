@@ -1,13 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>projeto</title>
+    <title>Prática Frontend | Início</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Navegação principal">
+        <a class="brand" href="/index.html">Prática Frontend</a>
+        <ul>
+          <li><a class="active" href="/index.html">Início</a></li>
+          <li><a href="/cadastro.html">Cadastro</a></li>
+          <li><a href="/listagem.html">Listagem</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card hero">
+        <p class="badge">Projeto Acadêmico</p>
+        <h1>Sistema de Cadastro de Alunos</h1>
+        <p>
+          Aplicação web com múltiplas páginas, formulário validado, listagem dinâmica e
+          gerenciamento de estado em memória com JavaScript.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="/cadastro.html">Cadastrar aluno</a>
+          <a class="btn" href="/listagem.html">Ver listagem</a>
+        </div>
+      </section>
+
+      <section class="grid cards-3">
+        <article class="card">
+          <h2>1. Navegação</h2>
+          <p>Menu consistente entre as páginas Início, Cadastro e Listagem.</p>
+        </article>
+        <article class="card">
+          <h2>2. Formulário</h2>
+          <p>Validação de campos, mensagens de erro e tratamento de envio.</p>
+        </article>
+        <article class="card">
+          <h2>3. Estado</h2>
+          <p>Dados mantidos em estrutura JavaScript e renderizados dinamicamente.</p>
+        </article>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/home.js"></script>
   </body>
 </html>

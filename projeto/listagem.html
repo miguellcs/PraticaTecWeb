@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prática Frontend | Listagem</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Navegação principal">
+        <a class="brand" href="/index.html">Prática Frontend</a>
+        <ul>
+          <li><a href="/index.html">Início</a></li>
+          <li><a href="/cadastro.html">Cadastro</a></li>
+          <li><a class="active" href="/listagem.html">Listagem</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <div class="list-header">
+          <div>
+            <h1>Listagem de alunos</h1>
+            <p>Renderização dinâmica com base no estado atual em memória.</p>
+          </div>
+          <button id="clear-data" class="btn" type="button">Limpar registros</button>
+        </div>
+
+        <p id="stats" class="feedback"></p>
+        <div id="lista-alunos" class="grid cards-3"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/listagem.js"></script>
+  </body>
+</html>
